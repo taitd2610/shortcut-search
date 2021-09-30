@@ -335,6 +335,26 @@ const windowsShortcutsData = [
     description: "Chia nhỏ cửa sổ làm việc",
     category: "VSCode",
   },
+  {
+    hotkeys: ["Control", ","],
+    description: "Mở cài đặt",
+    category: "VSCode",
+  },
+  {
+    hotkeys: ["Control", "J"],
+    description: "Ẩn/hiện Terminal",
+    category: "VSCode",
+  },
+  {
+    hotkeys: ["Control", "Shift", "P"],
+    description: "Mở bảng lệnh (Command Pallette)",
+    category: "VSCode",
+  },
+  {
+    hotkeys: ["Control", "K", "Z"],
+    description: "Bật Zen Mode",
+    category: "VSCode",
+  },
 ];
 
 export default windowsShortcutsData;

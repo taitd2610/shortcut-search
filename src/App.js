@@ -10,6 +10,7 @@ import TableView from "./components/TableView";
 //Data
 import macShortcutsData from "./data/macShortcuts";
 import windowsShortcutsData from "./data/windowsShortcuts";
+import KeyboardView from "./components/KeyboardView";
 
 function App() {
   const [view, setView] = useState("table");
@@ -65,7 +66,11 @@ function App() {
           data={osValue === "Windows" ? windowsShortcutsData : macShortcutsData}
         />
       ) : (
-        <></>
+        <KeyboardView
+          category={category}
+          osValue={osValue}
+          data={osValue === "Windows" ? windowsShortcutsData : macShortcutsData}
+        />
       )}
     </div>
   );
